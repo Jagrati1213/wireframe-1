@@ -9,4 +9,4 @@ it was a frintart profile page.
 - MD Bootstrap
 - Font Awesome
 ###
-you can check out the [link](https://github.com/Jagrati1213/wireframe-1/)
+you can check out the [link](https://jagrati1213.github.io/wireframe-1/)
