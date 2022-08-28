@@ -1,0 +1,355 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --frint-green:#30661e;
+    --frint-dark-blue:#0b1c38;
+    --frint-blue:#3b5c70;
+    --frint-purple:#907794;
+    --frint-dark-tomato:#ff6347;
+
+}
+body{
+    overflow-x: hidden;
+}
+
+/*************** Art Work Section 1 **************/
+.art-section-1{
+  height: 90vh;  
+}
+
+.art-section1-img-box{
+    background: url(./images/i4.png);
+    /* background-position:left center; */
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size:55%;
+}
+
+.art-sec-1-green-box{
+    background: var(--frint-green);
+    background: linear-gradient(90deg, 
+    var(--frint-green),transparent,var(--frint-green));
+    /* height: 35vh; */
+    height: 32vh;
+    /* border-end-end-radius: 14px; */
+    /* border-start-end-radius: 14px; */
+    border-end-end-radius: 24px;
+    border-start-end-radius: 24px;
+    /* width: 90%; */
+}
+
+.art-sec-1-content{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+
+.art-sec-1-content h1{
+    color: black;
+    font-size: 4rem;
+    /* font-size: 6rem; */
+    font-weight: 600;
+}
+
+.art-sec-1-content p{
+    font-size: 18px;
+    /* font-size: 28px; */
+}
+
+
+/*************** Painting Section-1,3 & Painting Section-2,4 **************/
+.painting-section-1,
+.painting-section-3,
+.painting-section-2,
+.painting-section-4{
+    height:auto;
+    margin-bottom: 3rem;
+}
+
+.painting-section-1 .painting-container,
+.painting-section-3 .painting-container,
+.painting-section-2 .painting-container,
+.painting-section-4 .painting-container{
+    display: flex; 
+    justify-content:space-evenly;
+    background-color: var(--frint-dark-blue);
+    align-items: center;
+    border-radius: 24px;
+    height: 60vh;
+}
+.painting-section-2 .painting-container{
+    background-color:var(--frint-purple); 
+}
+.painting-section-4 .painting-container{
+    background-color:var(--frint-dark-tomato);
+}
+.painting-section-3 .painting-container{
+    background-color: var(--frint-blue);
+}
+
+.painting-section-1 .painting-container .paint-img-box,
+.painting-section-1 .painting-container .paint-content-box,
+.painting-section-3 .painting-container .paint-img-box,
+.painting-section-3 .painting-container .paint-content-box,
+
+.painting-section-2 .painting-container .paint-img-box,
+.painting-section-2 .painting-container .paint-content-box,
+.painting-section-4 .painting-container .paint-img-box,
+.painting-section-4 .painting-container .paint-content-box{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.painting-section-1 .painting-container .paint-img-box img,
+.painting-section-3 .painting-container .paint-img-box img,
+
+.painting-section-2 .painting-container .paint-img-box img,
+.painting-section-4 .painting-container .paint-img-box img{
+    height: 80%;
+}
+
+.painting-section-1 .painting-container .paint-content-box,
+.painting-section-3 .painting-container .paint-content-box,
+
+.painting-section-2 .painting-container .paint-content-box,
+.painting-section-4 .painting-container .paint-content-box{
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: flex-start;
+     color: white;
+}
+
+.painting-section-1 .painting-container .paint-content-box .paint-share-icon,
+.painting-section-3 .painting-container .paint-content-box .paint-share-icon,
+.painting-section-2 .painting-container .paint-content-box .paint-share-icon,
+.painting-section-4 .painting-container .paint-content-box .paint-share-icon{
+    /* width: 100%; */
+    display: flex;
+    height: auto;
+    justify-content: end;
+    align-items: center;
+    padding-right: 44px;
+    /* height: 12vh; */
+    margin-top: 18px;
+}
+
+.painting-section-1 .painting-container .paint-content-box .paint-share-icon:hover,
+.painting-section-3 .painting-container .paint-content-box .paint-share-icon:hover,
+.painting-section-2 .painting-container .paint-content-box .paint-share-icon:hover,
+.painting-section-4 .painting-container .paint-content-box .paint-share-icon:hover{
+ cursor: pointer;
+}
+
+.painting-section-2 .painting-container .paint-content-box .paint-share-icon,
+.painting-section-4 .painting-container .paint-content-box .paint-share-icon{
+    justify-content:start; 
+    padding-right: 0;
+    padding-left: 44px;
+}
+
+.painting-section-1 .painting-container .paint-content-box .paint-money-div,
+.painting-section-3 .painting-container .paint-content-box .paint-money-div,
+.painting-section-2 .painting-container .paint-content-box .paint-money-div,
+.painting-section-4 .painting-container .paint-content-box .paint-money-div{
+    height: 7vh;
+}
+
+.painting-section-1 .painting-container .paint-content-box .paint-share-icon img,
+.painting-section-1 .painting-container .paint-content-box .paint-money-div  img,
+.painting-section-3 .painting-container .paint-content-box .paint-share-icon img,
+.painting-section-3 .painting-container .paint-content-box .paint-money-div  img,
+
+.painting-section-2 .painting-container .paint-content-box .paint-share-icon img,
+.painting-section-2 .painting-container .paint-content-box .paint-money-div  img,
+.painting-section-4 .painting-container .paint-content-box .paint-share-icon img,
+.painting-section-4 .painting-container .paint-content-box .paint-money-div  img{ 
+  
+    height: 40%;
+}
+
+.painting-section-1 .painting-container .paint-content-box .paint-money-div span p,
+.painting-section-3 .painting-container .paint-content-box .paint-money-div span p,
+.painting-section-2 .painting-container .paint-content-box .paint-money-div span p,
+.painting-section-4 .painting-container .paint-content-box .paint-money-div span p{
+    
+    font-weight: 800;
+    color: white;
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.painting-section-1 .painting-container .paint-content-box .paint-money-div span img:last-child:hover,
+.painting-section-3 .painting-container .paint-content-box .paint-money-div span img:last-child:hover,
+.painting-section-2 .painting-container .paint-content-box .paint-money-div span img:last-child:hover,
+.painting-section-4 .painting-container .paint-content-box .paint-money-div span img:last-child:hover{
+    cursor: pointer;
+}
+
+
+.painting-section-1 .painting-container .paint-content-box p,
+.painting-section-3 .painting-container .paint-content-box p,
+.painting-section-2 .painting-container .paint-content-box p,
+.painting-section-4 .painting-container .paint-content-box p{
+    
+    color: rgba(245, 245, 245, 0.608);
+}
+
+.painting-section-1 .painting-container .paint-content-box .print-content,
+.painting-section-3 .painting-container .paint-content-box .print-content,
+
+.painting-section-2 .painting-container .paint-content-box .print-content,
+.painting-section-4 .painting-container .paint-content-box .print-content{
+    
+  letter-spacing: 2px;
+  /* word-spacing: 2px; */
+  /* margin-top: 4rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 39vh;
+}
+
+.painting-section-2 .painting-container .paint-content-box .print-content,
+.painting-section-4 .painting-container .paint-content-box .print-content{
+    margin-left: 6rem;
+}
+
+.painting-section-1 .painting-container .paint-content-box .print-content p,
+.painting-section-3 .painting-container .paint-content-box .print-content p,
+
+.painting-section-2 .painting-container .paint-content-box .print-content p,
+.painting-section-4 .painting-container .paint-content-box .print-content p{
+   
+   font-size: 14px;
+}
+
+
+.painting-section-2 .painting-container .paint-img-box img{
+    height: 57%;
+}
+
+
+/******************* MEDIA QUERIES  ******************/
+@media only screen and (max-width:668px){
+ 
+    /******* Artwork-section-1 ******/
+    .art-section1-img-box{
+      background-position: center;
+   }
+    .art-section-1{
+        height: 65vh;
+    }
+    .art-section1-img-box{
+        height: 40vh;
+    }
+    .art-sec-1-green-box{
+        height: 20vh;
+    }
+    .art-sec-1-content {
+        height: 20vh;
+    }
+    .art-sec-1-content h1{
+        font-size: 2rem;
+    }
+    .art-sec-1-content p{
+        font-size: 14px;
+    }
+    /******* Painting-section-1,3 & Painting-section-2,4 ****/
+    .painting-section-1,
+    .painting-section-3,
+    .painting-section-2,
+    .painting-section-4 {
+        padding: 0 !important;
+        margin-top: 3rem !important; 
+        margin-bottom: 3rem !important; 
+    }
+    .painting-section-1 .painting-container,
+    .painting-section-3 .painting-container,
+
+    .painting-section-2 .painting-container,
+    .painting-section-4 .painting-container{
+        
+        height: 80vh;
+    } 
+
+    .painting-section-1 .painting-container .paint-img-box,
+    .painting-section-1 .painting-container .paint-content-box,
+    .painting-section-3 .painting-container .paint-img-box,
+    .painting-section-3 .painting-container .paint-content-box,
+
+    .painting-section-2 .painting-container .paint-img-box,
+    .painting-section-2 .painting-container .paint-content-box,
+    .painting-section-4 .painting-container .paint-img-box,
+    .painting-section-4 .painting-container .paint-content-box {
+        
+        height: 36vh;
+    }
+
+    .painting-section-1 .painting-container .paint-img-box img,
+    .painting-section-3 .painting-container .paint-img-box img,
+
+    .painting-section-2 .painting-container .paint-img-box img,
+    .painting-section-4 .painting-container .paint-img-box img{
+        
+        height: 100%;
+        /* min-width: 80%; */
+    }
+
+    .painting-section-2 .painting-container .paint-img-box img{
+        height: 70%;
+    }
+
+    .painting-section-1 .painting-container .paint-content-box,
+    .painting-section-3 .painting-container .paint-content-box,
+
+    .painting-section-2 .painting-container .paint-content-box,
+    .painting-section-4 .painting-container .paint-content-box {
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .painting-section-1 .painting-container .paint-content-box .paint-share-icon,
+    .painting-section-3 .painting-container .paint-content-box .paint-share-icon,
+    .painting-section-2 .painting-container .paint-content-box .paint-share-icon,
+    .painting-section-4 .painting-container .paint-content-box .paint-share-icon{
+        
+        /* display: inline; */
+        padding-right: 0;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    /* .painting-section-1 .painting-container .paint-content-box,
+    .painting-section-3 .painting-container .paint-content-box{
+        margin-top: 2rem;
+    } */
+
+    .painting-section-1 .painting-container .paint-content-box .print-content,
+    .painting-section-3 .painting-container .paint-content-box .print-content,
+
+    .painting-section-2 .painting-container .paint-content-box .print-content,
+    .painting-section-4 .painting-container .paint-content-box .print-content{
+        
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .painting-section-2 .painting-container .paint-content-box .print-content,
+    .painting-section-4 .painting-container .paint-content-box .print-content{
+       margin-left: 0rem;
+       margin-top: 0;
+    }
+}
